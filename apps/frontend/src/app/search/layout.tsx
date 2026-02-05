@@ -8,7 +8,7 @@ export default async function PageLayout({ children }: PageLayoutProps) {
         <PageActivator />
         { children }
         <Suspense>
-            <OptimizelyOneGadget servicePrefix='/api/me' refreshInterval={ 2000 } />
+            <OptimizelyOneGadget servicePrefix='/api/me' refreshInterval={ 5000 } />
         </Suspense>
     </>
 }
